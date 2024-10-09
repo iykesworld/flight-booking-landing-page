@@ -1,0 +1,115 @@
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 132px;
+}
+.offer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.offer-title{
+    font-size: 32px;
+    color: var(--pr-color);
+    margin-bottom: 30px;
+}
+.offer-top p{
+    font-size: 24px;
+    color: var(--pr-txtcolor);
+    letter-spacing: 20px;
+    text-align: center;
+}
+.offer-top-heading{
+    color: var(--pr-black);
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: center;
+}
+.offer-top span{
+    font-size: 20px;
+    color: var(--pr-txtcolor);
+    text-align: center;
+}
+.offer-bottom{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 40px;
+}
+.offer-left-content{
+    flex-grow: 1;
+    margin: 10px 0 20px 0;
+}
+.offer-left-number{
+    font-size: 24px;
+    color: var(--txt-white);
+    font-weight: 600;
+    padding: 10px;
+    height: 48px;
+    width: 48px;
+    border-radius: 20px;
+    background-color: var(--pr-color);
+    margin-bottom: 10px;
+}
+.offer-left-title{
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.offer-image{
+    width: 50%;
+}
+.offer-image img{
+    width: 100%;
+}
+@media (max-width:1024px) {
+    .offer{
+        margin: 40px 60px;
+    }
+    .offer-bottom{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin: 20px 0px;
+    }
+}
+@media (max-width:440px) {
+    .offer{
+        margin: 40px 10px;
+    }
+    .offer-title{
+        font-size: 28px;
+    }
+    .offer-top p{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+    .offer-top-heading{
+        
+        font-size: 28px;
+        margin: 20px;
+    }
+    .offer-top span{
+        font-size: 18px;
+    }
+    .offer-bottom{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin: 40px 10px;
+        flex-direction: column-reverse;
+    }
+    .offer-left-title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    
+    }
+    .offer-image{
+        width: 100%;
+    }
+
+  }

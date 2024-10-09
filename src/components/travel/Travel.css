@@ -1,0 +1,111 @@
+.travel{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 132px;
+    background-color: var(--pr-txtcolor);
+}
+.travel h1{
+    font-size: 32px;
+    color: var(--txt-white);
+}
+.travel-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.travel-data-content{
+    width: 364px;
+    height: 498px;
+    border-radius: 200px;
+    background-color: var(--txt-white);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 50px;
+}
+.travel-icon{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-color: var(--pr-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.travel-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.travel-subtitle{
+    font-size: 24px;
+    text-align: center;
+    color: var(--pr-txtcolor);
+}
+@media (max-width:1024px) {
+    .travel{
+        padding: 40px 60px;
+    }
+    .travel-data{
+        gap: 10px;
+    }
+}
+@media (max-width:820px) {
+    .travel-data-content{
+    width: 300px;
+    height: 450px;
+    border-radius: 200px;
+    background-color: var(--txt-white);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+    }
+}
+@media (max-width:440px) {
+    .travel{
+        padding: 40px 10px;
+    }
+    .travel h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .travel-data-content{
+        width: 150px;
+        height: 250px;
+        border-radius: 200px;
+        padding: 10px;
+        }
+        .travel-icon{
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .travel-icon img{
+            width: 100%;
+        }
+        .travel-title{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .travel-data{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .travel-subtitle{
+            font-size: 16px;
+            text-align: center;
+            color: var(--pr-txtcolor);
+        }
+  }

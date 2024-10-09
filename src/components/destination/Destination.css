@@ -1,0 +1,116 @@
+.destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 132px;
+}
+.destination-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.destination-heading .d-heading{
+    font-size: 32px;
+    text-align: center;
+    color: var(--pr-color);
+}
+.destination-heading .d-sub{
+    font-size: 32px;
+    text-align: center;
+}
+.destination-body-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.destination-single-data{
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 416px;
+    border-radius: 200px;
+}
+.destination-image, .destination-imagetwo, .destination-single-name{
+    position: absolute;
+}
+.destination-image{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+.destination-imagetwo{
+    bottom: 60px;
+    left: 35%;
+    transform: translateX(-50%);
+    border: 5px solid var(--txt-white);
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    animation: animate 2.3s infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.destination-single-name{
+    bottom: 0;
+    width: 100%;
+    background-color: var(--txt-white);
+    padding: 10px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.destination-single-name:hover{
+    opacity: 1;
+}
+.destination-single-name .name{
+    text-align: center;
+    font-weight: 700;
+}
+.destination-single-name .location{
+    text-align: center;
+}
+@media (max-width:1024px) {
+    .destination{
+        margin: 40px 60px;
+    }
+    .destination-body-container{
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:440px) {
+    .destination{
+        margin: 40px 10px;
+    }
+    .destination-heading .d-heading{
+        font-size: 28px;
+    }
+    .destination-heading .d-sub{
+        font-size: 28px;
+    }
+    .destination-single-data{
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        height: 416px;
+        border-radius: 200px;
+    }
+}
+

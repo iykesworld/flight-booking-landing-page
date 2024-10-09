@@ -1,0 +1,13 @@
+.card{
+    width: 100%;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+}
+.card-name p{
+    margin: 5px;
+}
+.card-name-title{
+    font-weight: 700;
+}
