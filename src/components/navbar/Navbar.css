@@ -32,15 +32,7 @@
     color: var(--pr-black);
     cursor: pointer;
 }
-.navbar-list p.activep{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--pr-black);
-}
+
 .navbar-list li::before{
     content: '';
     position: absolute;
